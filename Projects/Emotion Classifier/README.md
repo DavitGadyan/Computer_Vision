@@ -2,7 +2,7 @@
 
 ## Description
 
-This project is aimed to capture emotions of people from image and video based on face expressions. 
+This project is aimed at capturing emotions of people from image and video based on face expressions. 
 
 There are 6 emotions which this clasifier can recognize:
 
