@@ -1,0 +1,13 @@
+ultralytics>=8.4.0
+opencv-python-headless
+numpy
+pandas
+matplotlib
+lap
+pyyaml
+yt-dlp
+fast-plate-ocr[onnx]
+onnx
+onnxruntime
+huggingface_hub
+git+https://github.com/ultralytics/CLIP.git

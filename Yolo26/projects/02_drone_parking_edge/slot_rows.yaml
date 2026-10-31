@@ -1,0 +1,19 @@
+# Parametric parking-slot rows for regular (angled or perpendicular) lots.
+# Each row: top-left x of the first painted line, y of the line tops/bottoms, line pitch (px),
+# line direction (dx over the slot depth) and the number of slots. Coordinates refer to a 1280-px-wide frame.
+reference_width: 1280
+rows:
+  A:   # north row (top of frame)
+    x0: 30
+    y_top: 227
+    y_bottom: 300
+    pitch: 67.5
+    dx: 60
+    count: 18
+  B:   # south row
+    x0: -9.6
+    y_top: 457
+    y_bottom: 537
+    pitch: 65.2
+    dx: 67
+    count: 16

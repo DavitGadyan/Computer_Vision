@@ -1,0 +1,28 @@
+# Environments
+.venv/
+__pycache__/
+*.pyc
+
+# Model weights / exports (never commit models)
+models/
+*.pt
+*.pth
+*.onnx
+*.engine
+*.tflite
+*.mlpackage
+*_ncnn_model/
+*_openvino_model/
+*_imx_model/
+*_saved_model/
+
+# Training / datasets
+runs/
+datasets/
+**/datasets/
+
+# Raw downloaded videos and full-length outputs (re-creatable)
+**/data/
+**/outputs/
+logs/
+mobileclip*.ts

@@ -1,0 +1,17 @@
+# Scene calibration for data/traffic_overpass.mp4 (pixel coords of the 1920x1080 frame).
+# In production these points come from a site survey; here they are estimated from lane markings
+# (UK dual carriageway: 2 lanes x 3.65 m) and queue length, so speeds are approximate (+/-15%).
+lanes:
+  "Lane 1":  [[725, 400], [966, 400], [952, 1080], [262, 1080]]
+  "Lane 2":  [[966, 400], [1216, 400], [1665, 1080], [952, 1080]]
+speed:
+  # image quadrilateral (TL, TR, BR, BL) and its real-world size in metres
+  source: [[660, 495], [1279, 495], [1665, 1080], [262, 1080]]
+  width_m: 7.3
+  length_m: 45
+  limit_kmh: 50
+count_line_y: 820            # vehicles are counted when their ground point crosses this line
+anpr:
+  min_y2: 620                # only read plates on vehicles whose bottom edge is below this y (close to camera)
+  min_width: 170             # ... and wide enough to have a readable plate
+  plate_regex: "[A-Z]{2}[0-9]{2}[A-Z]{3}"   # current UK format; set per country / leave empty for any

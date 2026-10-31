@@ -1,0 +1,9 @@
+# Assembly line with collaborative robots - dynamic separation only (no fixed floor zones).
+# Hand-held promo footage: stricter robot filtering, short memory because the camera moves.
+robot_prompts: ["robot arm", "collaborative robot arm"]
+robot_conf: 0.45
+max_robot_area: 0.18
+stop_distance_m: 0.25
+slow_distance_m: 0.7
+floor_zones: {}
+robot_speed_pct: {SAFE: 100, SLOW: 30, STOP: 0}

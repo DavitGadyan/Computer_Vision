@@ -1,0 +1,10 @@
+# Work-cell configuration for data/ur10_safety_zone.mp4 (coordinates in the 1280-px-wide processing frame).
+robot_prompts: ["robot arm", "industrial robot", "collaborative robot"]
+# Speed & separation thresholds (metres, monocular estimate) - tune per risk assessment
+stop_distance_m: 0.5
+slow_distance_m: 1.3
+# Optional fixed floor zones (feet inside => state). Mirrors tape / laser-scanner fields around the robot base.
+floor_zones:
+  STOP: [[400, 520], [820, 520], [880, 620], [360, 620]]
+  SLOW: [[260, 480], [960, 480], [1180, 720], [100, 720]]
+robot_speed_pct: {SAFE: 100, SLOW: 30, STOP: 0}

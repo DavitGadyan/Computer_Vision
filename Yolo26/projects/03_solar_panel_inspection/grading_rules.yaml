@@ -1,0 +1,5 @@
+# Module grading rules (simplified from typical manufacturer EL acceptance criteria, cf. IEC TS 60904-13).
+# Adjust to the customer's quality spec.
+critical: [broken, no_electricity, black_border]   # any occurrence -> REJECT
+minor: [scratch, hot_spot]                          # tolerated in small numbers
+max_minor_for_b: 3                                  # > 3 minor defects -> REJECT, 1..3 -> GRADE B
